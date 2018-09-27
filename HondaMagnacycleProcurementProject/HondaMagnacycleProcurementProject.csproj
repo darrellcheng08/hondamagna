@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CB483C5-03B1-4111-A785-EAD41E144997}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HondaMagnacycleProcurementProject</RootNamespace>
+    <AssemblyName>HondaMagnacycleProcurementProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\HPIPORecordsDatabase.mdf" />
+    <Content Include="App_Data\HPIPORecordsDatabase_log.ldf">
+      <DependentUpon>HPIPORecordsDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\MagnaAdministratorDatabase.mdf" />
+    <Content Include="App_Data\MagnaAdministratorDatabase_log.ldf">
+      <DependentUpon>MagnaAdministratorDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\HondaPhilsIncDatabase.mdf" />
+    <Content Include="App_Data\HondaPhilsIncDatabase_log.ldf">
+      <DependentUpon>HondaPhilsIncDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\MagnacycleDatabase.mdf" />
+    <Content Include="App_Data\MagnacycleDatabase_log.ldf">
+      <DependentUpon>MagnacycleDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\MessagingDatabase.mdf" />
+    <Content Include="App_Data\MessagingDatabase_log.ldf">
+      <DependentUpon>MessagingDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="frm_HondaPhilsInc.aspx" />
+    <Content Include="frm_HondaPhilsIncDefault.aspx" />
+    <Content Include="frm_MagnacycleAdministrator.aspx" />
+    <Content Include="frm_UserLogIn.aspx" />
+    <Content Include="frm_MagnacycleUser.aspx" />
+    <Content Include="Resources\calendar.jpg" />
+    <Content Include="Resources\Close-Image.png" />
+    <Content Include="Resources\Honda Logo.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_HondaPhilsInc.aspx.cs">
+      <DependentUpon>frm_HondaPhilsInc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_HondaPhilsInc.aspx.designer.cs">
+      <DependentUpon>frm_HondaPhilsInc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HondaPhilsIncDefault.aspx.cs">
+      <DependentUpon>frm_HondaPhilsIncDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_HondaPhilsIncDefault.aspx.designer.cs">
+      <DependentUpon>frm_HondaPhilsIncDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MagnacycleAdministrator.aspx.cs">
+      <DependentUpon>frm_MagnacycleAdministrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MagnacycleAdministrator.aspx.designer.cs">
+      <DependentUpon>frm_MagnacycleAdministrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_UserLogIn.aspx.cs">
+      <DependentUpon>frm_UserLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_UserLogIn.aspx.designer.cs">
+      <DependentUpon>frm_UserLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MagnacycleUser.aspx.cs">
+      <DependentUpon>frm_MagnacycleUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MagnacycleUser.aspx.designer.cs">
+      <DependentUpon>frm_MagnacycleUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileUploaded\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50481</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
